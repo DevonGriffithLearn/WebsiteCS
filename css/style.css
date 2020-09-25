@@ -16,6 +16,11 @@ nav .brand-logo {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.textbox {
+  text-color: white
+  background-color: #ee6e73;
+  }
+
 p {
   line-height: 2rem;
 }

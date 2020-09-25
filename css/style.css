@@ -33,6 +33,7 @@ p {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
+  background-color: #ee6e73"
 }
   .parallax-container .section {
     width: 100%;
@@ -69,5 +70,5 @@ p {
 
 footer.page-footer {
   margin: 0;
-  background-color: #ee6e73"
+  background-color: #ee6e73;
 }

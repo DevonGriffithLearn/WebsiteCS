@@ -33,21 +33,22 @@ p {
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
-  background-color: #ee6e73"
+  background-color: #ee6e73;
 }
   .parallax-container .section {
     width: 100%;
     border-color: #D4AF37
+    background-color: #ee6e73;
   }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-      background-color: #D4AF37
+    background-color: #D4AF37
     position: absolute;
     top: 40%;
   }
   #index-banner .section {
-      background-color: #D4AF37
+    background-color: #ee6e73;
     color: #4CAF50;
     top: 10%;
   }
@@ -70,5 +71,5 @@ p {
 
 footer.page-footer {
   margin: 0;
-  background-color: #ee6e73;
+  color: #ee6e73;
 }

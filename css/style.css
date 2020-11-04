@@ -6,11 +6,6 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
-}
-
 .outline {
     color: #fff;
     text-shadow: #000 0px 0px 2px;

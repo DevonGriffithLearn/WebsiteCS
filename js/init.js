@@ -1,37 +1,32 @@
-(function($){
-  $(function(){
+$(document).ready(function () {
+  // DOM variables
+  let languageDesktopButton = $('.extra-content__language'),
+  hamburguerMenu = $('.menu'),
+  languageMobileButton = $('.language'),
+  languageSelector = '.extra-content__language-selector';
 
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
+  languageDesktopButton.on('click', function () {
+    $(this).toggleClass('is-open');
 
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+    toggleARIA($(this).find(languageSelector), 'aria-expanded');
+    toggleARIA($(this).find(languageSelector), 'aria-hidden');
+  });
+  hamburguerMenu.on("click", function () {
+    $(this).parent().parent().toggleClass('is-open');
 
-$(".sidebar-dropdown > a").click(function() {
-  $(".sidebar-submenu").slideUp(200);
-  if (
-    $(this)
-      .parent()
-      .hasClass("active")
-  ) {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .parent()
-      .removeClass("active");
-  } else {
-    $(".sidebar-dropdown").removeClass("active");
-    $(this)
-      .next(".sidebar-submenu")
-      .slideDown(200);
-    $(this)
-      .parent()
-      .addClass("active");
-  }
+    toggleARIA($(this).parent().parent(), 'aria-hidden');
+  });
+
+  languageMobileButton.on('click', function () {
+    $(this).toggleClass('is-open');
+
+    toggleARIA($(this), 'aria-expanded');
+  });
 });
 
-$("#close-sidebar").click(function() {
-  $(".page-wrapper").removeClass("toggled");
-});
-$("#show-sidebar").click(function() {
-  $(".page-wrapper").addClass("toggled");
-});
+// Toggle ARIA attributes
+function toggleARIA(selector, ARIA) {
+  selector.attr(ARIA, function (i, attr) {
+    return attr == 'true' ? 'false' : 'true';
+  });
+}

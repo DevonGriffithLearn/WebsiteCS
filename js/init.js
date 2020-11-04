@@ -6,7 +6,7 @@
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
-<!--
+
 $(".sidebar-dropdown > a").click(function() {
   $(".sidebar-submenu").slideUp(200);
   if (
@@ -35,7 +35,7 @@ $("#close-sidebar").click(function() {
 $("#show-sidebar").click(function() {
   $(".page-wrapper").addClass("toggled");
 });
--->
+
   $(".sidebar-dropdown > a").click(function() {
   $(".sidebar-submenu").slideUp(200);
   if (

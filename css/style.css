@@ -34,24 +34,6 @@ p {
   color: #26a69a;
 }
 
-.page-wrapper .sidebar-wrapper,
-.sidebar-wrapper .sidebar-brand > a,
-.sidebar-wrapper .sidebar-dropdown > a:after,
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before,
-.sidebar-wrapper ul li a i,
-.page-wrapper .page-content,
-.sidebar-wrapper .sidebar-search input.search-menu,
-.sidebar-wrapper .sidebar-search .input-group-text,
-.sidebar-wrapper .sidebar-menu ul li a,
-#show-sidebar,
-#close-sidebar {
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
 .page-wrapper.toggled .sidebar-wrapper {
   left: 0px;
 }
@@ -63,7 +45,7 @@ p {
 }
 /*----------------show sidebar button----------------*/
 #show-sidebar {
-  position: fixed;
+  position: relative;
   left: 0;
   top: 10px;
   border-radius: 0 4px 4px 0px;
@@ -71,7 +53,7 @@ p {
   transition-delay: 0.3s;
 }
 .page-wrapper.toggled #show-sidebar {
-  left: -40px;
+  left: 0px;
 }
 /*----------------sidebar-wrapper----------------*/
 
@@ -81,7 +63,7 @@ p {
   max-height: 100%;
   position: fixed;
   top: 0;
-  left: -300px;
+  left: 0px;
   z-index: 999;
 }
 
@@ -383,7 +365,7 @@ footer.page-footer {
 
     position: absolute;  /* <-- added declarations */
     left: 0; top: 100%;  /*     here               */
-    width: 100%;         /*     and here...        */
+    width: 33%;         /*     and here...        */
 
     transition: height 1s ease;
 }

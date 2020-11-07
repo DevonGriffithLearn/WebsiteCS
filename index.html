@@ -14,13 +14,6 @@
    <nav class="#ee6e73" role="navigation">
     <div class="nav-wrapper container headerNav background-color: #ee6e73">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   <div>
@@ -31,13 +24,13 @@
           <div class="spinner diagonal part-2"></div>
       </label>
       <div id="sidebarMenu">
-        <ul class="sidebarMenuInner">
+        <ul class="sidebarMenuInner" id="nav-mobile" class="sidenav">
           <li>CS Learn <span>Learn Computer Science</span></li>
-          <li><a class="page-link" href="/about.html" target="_self">About Us</a></li>
-          <li><a href="https://business.google.com/u/2/edit/l/05269028674664725647" target="_blank">Google Profile</a></li>
-          <li><a href="https://twitter.com/BrothersByte" target="_blank">Twitter</a></li>
-          <li><a href="#!" target="_blank">YouTube</a></li>
-          <li><a href="#!" target="_blank">Linkedin</a></li>
+          <li><a class="page-link" href="/about.html" target="_self" data-target="nav-mobile" class="sidenav-trigger">About Us</a></li>
+          <li><a href="https://business.google.com/u/2/edit/l/05269028674664725647" target="_self" data-target="nav-mobile" class="sidenav-trigger">Google Profile</a></li>
+          <li><a href="https://twitter.com/BrothersByte" target="_self" data-target="nav-mobile" class="sidenav-trigger">Twitter</a></li>
+          <li><a href="#!" target="_self" data-target="nav-mobile" class="sidenav-trigger">YouTube</a></li>
+          <li><a href="#!" target="_self" data-target="nav-mobile" class="sidenav-trigger">Linkedin</a></li>
         </ul>
       </div>
   <div class="parallax-container valign-wrapper">

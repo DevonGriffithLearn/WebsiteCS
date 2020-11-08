@@ -106,11 +106,11 @@ body {
     margin-top: 60px;
     transform: translateX(-250px);
     transition: transform 250ms ease-in-out;
-    background: linear-gradient(180deg, #ee6e73 100%, #3F5EFB 0%);
+    background: linear-gradient(180deg, #ee6e73 0%, #3F5EFB 100%);
 }
 .sidebarMenuInner{
     margin:0;
-    padding:0;
+    padding:20px;
     border-top: 1px solid rgba(255, 255, 255, 0.10);
     display: inline-block;
 }

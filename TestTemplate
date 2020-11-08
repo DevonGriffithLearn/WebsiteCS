@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>ByteBrothers</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Byte Brothers</title>
+
+  <!-- CSS  -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
   
 <body>
-  <nav class="navbar navbar-inverse">
-    <ul id="slide-out" class="sidenav">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="images/office.jpg">
-      </div>
-      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-  </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-  </nav>
-
-  <div class="container-fluid col-bg-12 text-center">    
-    <h3>About Us</h3><br>
-    <div class="row">
-      <div class="col-lg-12 align-center">
-        <h4>Who We Are</h4><br>
-        <p>Lorem Ipsum</p>
-      </div>
+  <nav class="#ee6e73" role="navigation">
+    <div class="nav-wrapper container headerNav background-color: #ee6e73">
+      <a id="logo-container" href="https://devongriffithlearn.github.io/WebsiteCS/index.html#" class="brand-logo">Logo</a>
     </div>
-  </div>
+  </nav>
+  <div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle align-left">
+          <div class="spinner diagonal part-1"></div>
+          <div class="spinner horizontal"></div>
+          <div class="spinner diagonal part-2"></div>
+      </label>
+      <div id="sidebarMenu" class="sidenav show-on-large">
+        <ul class="sidebarMenuInner" id="nav-mobile" class="sidenav show-on-large">
+          <li><a class="page-link" href="https://devongriffithlearn.github.io/WebsiteCS/index.html#" target="_self" data-target="nav-mobile" class="sidenav-trigger show-on-large" style="color:white;"><b>CS Learn </b><span style="color: rgba(255, 255, 255, 0.50);">Learn&nbsp;Computer&nbsp;Science&nbsp;&nbsp;</span></a></li>
+          <li><a class="page-link" href="#!" target="_self" data-target="nav-mobile" class="sidenav-trigger show-on-large">About Us</a></li>
+          <li><a class="page-link" href="https://business.google.com/u/2/edit/l/05269028674664725647" target="_self" data-target="nav-mobile" class="sidenav-trigger show-on-large">Google Profile</a></li>
+          <li><a class="page-link" href="https://twitter.com/BrothersByte" target="_self" data-target="nav-mobile" class="sidenav-trigger show-on-large">Twitter</a></li>
+          <li><a href="#!" target="_self" data-target="nav-mobile" class="sidenav-trigger show-on-large">YouTube</a></li>
+          <li><a href="#!" target="_self" data-target="nav-mobile" class="sidenav-trigger show-on-large">Linkedin</a></li>
+        </ul>
+      </div>
 
   <div class="container-fluid col-sm-12 text-center">
     <div class="row">

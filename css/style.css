@@ -210,7 +210,7 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   white-space: nowrap ;
 }
 
-button {
-  margin:auto;
-  display:block;
+.button {
+  display: table;
+  margin: 0 auto;
 }
